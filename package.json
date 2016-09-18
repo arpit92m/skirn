@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack -d --watch",
-    "build" : "webpack -p"
+    "dev": "webpack-dev-server --progress --colors --content-base src --host localhost --port 8081",
+    "build": "webpack -p"
   },
   "dependencies": {
     "babel-core": "^6.14.0",
@@ -15,10 +15,10 @@
     "core-js": "^2.4.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
   },
   "devDependencies": {},
-  
   "author": "Arpit",
   "license": "ISC"
 }
